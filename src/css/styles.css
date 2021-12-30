@@ -1,0 +1,62 @@
+
+/* === FONT === */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* ## Colors
+
+### Primary
+
+- Soft Blue: hsl(231, 69%, 60%)
+- Soft Red: hsl(0, 94%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(229, 8%, 60%)
+- Very Dark Blue: hsl(229, 31%, 21%) */
+
+
+html, body{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* === GENERAL === */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* === NAVBAR === */
+
+.navbar {
+   position: relative;
+   margin-left: 2rem;
+   margin-right: 2rem;
+   top: 2rem;
+   justify-content: space-between;
+}
+
+.image-sizing {
+    width: 7.5rem;
+    height: 1.4rem;
+    align-self: center;
+}
+
+#hamburger span{
+   font-size: 45px;
+}
+
+/* === LOGO UNDER THE NAVBAR === */
+
+#logo-under-navbar {
+    
+}
