@@ -35,6 +35,12 @@ html, body{
 
 }
 
+.grid-container {
+    display: grid;
+    grid-template-rows: 80%;
+    grid-template-columns:30% 30% 40%;
+}
+
 /* === NAVBAR === */
 
 .navbar {
@@ -57,6 +63,42 @@ html, body{
 
 /* === LOGO UNDER THE NAVBAR === */
 
+
 #logo-under-navbar {
-    
+    margin-top: 5rem;
 }
+
+.under-navbar-container {
+    
+   position: relative;
+   top: 3rem;
+
+} 
+
+.logo-under-navbar-bg {
+    background-color: hsl(231, 69%, 60%);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 50% 0 0 50%;;
+}
+
+#logo-under-navbar img {
+    width: 315%;
+    height: auto;
+    position: relative;
+    bottom: 2rem;
+    left: .6rem;
+    bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
