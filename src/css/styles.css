@@ -32,13 +32,22 @@ html, body{
 .flex-container {
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
     display: grid;
     grid-template-rows: 80%;
     grid-template-columns:30% 30% 40%;
+}
+
+.btn button{
+    padding: 1rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-radius: .2rem;
+    border: none;
 }
 
 /* === NAVBAR === */
@@ -92,13 +101,59 @@ html, body{
     bottom: 3rem;
 }
 
+/* === BOOKMARK-MANAGER === */
 
+#bookmark-manager {
+    margin-top: 2rem;
+}
 
+.book-manager-container {
+    flex-direction: column;
+    justify-content: center;
+}
 
+.flex-container > h1 {
+    text-align: center;
+    color: hsl(229, 31%, 21%);
+    font-size: 1.7rem;
+}
 
+.flex-container > p {
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: hsl(229, 8%, 60%);
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
 
+.btn-items > button {
+    flex-direction: row;
+}
 
+.btn_1 {
+    color: #FFF;
+    background-color: hsl(231, 69%, 60%);
+    box-shadow:  0 0 .5em hsl(231, 69%, 60%);
+    margin-right: .3rem;
+    margin-left: .1rem;
+    font-weight: bold;
+}
 
+.btn_2 {
+    color: hsl(229, 8%, 60%);
+    background-color: hsl(225, 5%, 96%);
+    box-shadow:  0 0 .5em hsl(229, 8%, 60%);
+    margin-left: .3rem;
+    font-weight: bold;
+}
 
+/* === MEDIA QUERIES === */
 
-
+@media (max-width: 374px) {
+    .btn-items > button {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: .7rem;
+    }
+}
