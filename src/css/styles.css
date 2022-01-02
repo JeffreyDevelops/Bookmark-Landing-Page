@@ -150,7 +150,7 @@ html, body{
 
 /* === MEDIA QUERIES === */
 
-@media (max-width: 374px) {
+@media (max-width: 328px) {
     .btn-items > button {
         display: flex;
         flex-direction: row;
