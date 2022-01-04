@@ -183,7 +183,7 @@ html, body{
 }
 
 
-.active-feature {
+.active-feature_1 {
     border: none;
     height: 4px;
     background-color: hsl(0, 94%, 66%);
@@ -192,6 +192,28 @@ html, body{
     margin-bottom: 0;
     position: relative;
     top: 1.7rem;
+}
+
+.active-feature_2 {
+    border: none;
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 1rem;
+}
+
+.active-feature_3 {
+    border: none;
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 1rem;
 }
 
 /* === MEDIA QUERIES === */
