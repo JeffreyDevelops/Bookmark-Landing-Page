@@ -42,6 +42,12 @@ html, body{
     grid-template-columns:30% 30% 40%;
 }
 
+.grid-extension {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr;
+}
+
 .tab-grid-container {
     margin-bottom: 4rem;
     position: relative;
@@ -261,6 +267,84 @@ html, body{
     margin-top: 0;
     margin-bottom: .9rem;
 }
+
+/* === DOWNLOAD-EXTENSION === */
+
+.flex-exention-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.extension-container {
+    flex-direction: column;
+}
+
+.extension-container h1{
+    font-size: 1.3rem;
+    margin-bottom: .7rem;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.extension-bg {
+    display: flex;
+    background-color: #FFF;
+    box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+    width: 75%;
+    height: 19rem;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.extension-bg > img {
+   width: 5rem;
+   height: 5rem;
+   margin-top: 2rem;
+}
+
+.extension-header {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    color: hsl(229, 31%, 21%);
+}
+
+.extension-text {
+    font-size: .9rem;
+    margin-top: .6rem;
+    color: hsl(229, 8%, 60%);
+}
+
+
+  .dotted-spaced {
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(229, 8%, 60%) 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 20px 3px;
+    background-repeat: repeat-x;
+    margin-top: .7rem;
+  }
+
+  .extension-button {
+    margin-top: .5rem;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: .2rem;
+    border: none;
+    color: #FFF;
+    font-weight: 600;
+    background-color: hsl(231, 69%, 60%);
+  }
+ 
 
 
 /* === MEDIA QUERIES === */
