@@ -257,6 +257,11 @@ html, body{
      flex-direction: column;
 }
 
+.tab-text-container h1 {
+    margin-top: 0;
+    margin-bottom: .9rem;
+}
+
 
 /* === MEDIA QUERIES === */
 
