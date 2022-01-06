@@ -38,9 +38,18 @@ html, body{
 
 .grid-container {
     display: grid;
-    grid-template-rows: 80%;
+    grid-template-rows: 78%;
     grid-template-columns:30% 30% 40%;
 }
+
+.tab-grid-container {
+    margin-bottom: 4rem;
+    position: relative;
+    top: 3rem;
+    display: grid;
+    grid-template-rows: 90%;
+    grid-template-columns:50% 30% 30%;
+ } 
 
 .btn button{
     padding: 1rem;
@@ -68,7 +77,6 @@ html, body{
 
 /* === LOGO UNDER THE NAVBAR === */
 
-
 #logo-under-navbar {
     margin-top: 5rem;
 }
@@ -85,7 +93,7 @@ html, body{
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 4;
-    border-radius: 50% 0 0 50%;;
+    border-radius: 50% 0 0 50%;
 }
 
 #logo-under-navbar img {
@@ -215,6 +223,40 @@ html, body{
     position: relative;
     top: 1rem;
 }
+
+/* === TAB-TEXT === */
+
+#tab-text {
+    position: relative;
+    bottom: 2rem;
+}
+
+#tab-container {
+    margin-top: 5rem;
+}
+
+
+.tab-bg {
+    background-color: hsl(231, 69%, 60%);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 0 50% 50% 0;
+}
+
+#tab-container img {
+    width: 105%;
+    height: auto;
+    position: relative;
+    bottom: 2rem;
+    left: 1.8rem;
+    bottom: 3rem;
+}
+
+.tab-text-container {
+     flex-direction: column;
+}
+
 
 /* === MEDIA QUERIES === */
 
