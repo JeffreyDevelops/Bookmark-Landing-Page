@@ -357,7 +357,7 @@ html, body{
     margin-right: 1rem;
   }
 
-#faq-1 {
+#faq {
     display: flex;
     flex-direction: column;
 }
