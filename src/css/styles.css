@@ -489,16 +489,17 @@ html, body{
     font-weight: 400;
 }
 
-form {
+
+#email-form-bg {
     padding-top: .1rem;
     padding-right: .1rem;
     padding-left: .2rem;
-    padding-bottom: .5em;
+    padding-bottom: .9rem;
     border-radius: .4rem .4rem .4rem .4rem;
-    background-color: hsl(0, 94%, 66%);
+    
+    /* switcher background: none; */
+    
 } 
-
-
 
 form p {
     margin-top: 0;
@@ -511,7 +512,6 @@ form p {
     
 }
 
-
 .email-input {
     height: 2.5rem;
     width: 16rem;
@@ -523,14 +523,13 @@ form p {
     display: inline;
     padding-right: .8rem;
     padding-left: .8rem;
+    background-image: url(../images/icon-error.svg); 
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 0px;
 }
 
-.email-input::placeholder {
-    background-image: url(../images/icon-error.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 16px;
-}
+
 
 .email-button {
     margin-top: 1rem;
@@ -543,6 +542,7 @@ form p {
     background-color: hsl(0, 94%, 66%);
     border: none;
 }
+
 
 
 /* === MEDIA QUERIES === */

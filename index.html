@@ -177,14 +177,16 @@
     <div class="flex-container email-container">
       <span>35,000+ ALREADY JOINED</span>
       <h1>Stay up-to-date with what we’re doing</h1>
-
-      <form action="index.html" method="get">
-        <div class="flex-container">
-        <input class="email-input" type="email" name="email" placeholder="Enter your email adress">
+      <div id="email-form-bg">
+      <form id="email-form" action="index.html" method="get">
+        <div class="flex-container email-form-input">
+        <input required class="email-input" type="email" name="email" oninvalid="invalid(this)" placeholder="Enter your email adress" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$">
       </div>
-        <p>Whoops, make sure it's an email</p>
+        </div>
+        <button type="submit" class="email-button" >Contact Us</button>
       </form>
-      <button class="email-button"><span>Contact Us</span></button>
+      
+      
 
     </div>
 
@@ -209,6 +211,7 @@
   Features
   Pricing
   Contact -->
+<script src="./src/js/email.js" defer></script>
 <script src="./src/js/faq.js" defer></script>
 <script src="./src/js/features.js" defer></script>
 </body>
