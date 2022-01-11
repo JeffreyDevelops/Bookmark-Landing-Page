@@ -74,7 +74,7 @@ body::before {
 
 /* === NAVBAR === */
 
-.navbar {
+.navbar-mobile {
    position: relative;
    margin-left: 2rem;
    margin-right: 2rem;
@@ -680,6 +680,20 @@ form p {
         flex-direction: row;
         margin-bottom: .7rem;
     }
+    
+}
+
+@media (max-width: 1438px) {
+    .navbar-desktop {
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        top: 2rem;
+        justify-content: space-between;
+        display: none;
+        visibility: hidden;
+     }
+     
 }
 
 /* === DESKTOP VERSION / MEDIA QUERY === */
@@ -767,5 +781,59 @@ form p {
         box-shadow:  0 0 .5em hsl(229, 8%, 60%);
         margin-left: .3rem;
         font-weight: bold;
+    }
+    /* Navbar */
+
+    .navbar-mobile {
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        top: 2rem;
+        justify-content: space-between;
+        display: none;
+        visibility: hidden;
+     }
+
+     .navbar-desktop {
+        position: relative;
+        margin-left: 11%;
+        margin-right: 8rem;
+        top: 2rem;
+        justify-content: space-between;
+     }
+     
+     .image-sizing {
+         width: 7.5rem;
+         height: 1.4rem;
+         align-self: center;
+     }
+
+     .nav-items-desktop {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+        align-items: center;
+     }
+
+     .nav-items-desktop a{
+        text-decoration: none;
+        color: hsl(229, 8%, 60%);
+        font-size: 14px;
+    }
+
+    .btn-desktop {
+    padding: .5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    border-radius: .2rem;
+    border: none;
+    background-color: hsl(0, 94%, 66%);
+    color: #FFF;
+    }
+
+    .btn-desktop button {
+        font-size: 14px;
     }
 }

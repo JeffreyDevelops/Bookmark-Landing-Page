@@ -15,7 +15,7 @@
 <body>
 
    <div id="myNav" class="overlay">
-    <div class="flex-container navbar">
+    <div class="flex-container navbar-mobile">
       <img class="bookmark-nav-logo" src="./src/images/logo-bookmark-white-mobile.svg" alt="">
       <div><img class="close-logo-nav" onclick="closeNav()" src="./src/images/icon-close.svg" alt=""></div>
     </div>
@@ -40,11 +40,22 @@
 
   <!-- Navbar -->  
    <section id="boomark-nav">
-
-    <nav class="flex-container navbar">
+    <!-- mobile -->
+    <nav class="flex-container navbar-mobile">
         <img class="image-sizing" src="src/images/logo-bookmark.svg" alt="bookmark-logo">
         <div onclick="openNav()" id="hamburger"><img src="./src/images/icon-hamburger.svg" alt="mobile-hamburger"></div>
     </nav>
+
+    <!-- desktop -->
+    <nav class="flex-container navbar-desktop">
+      <img class="image-sizing" src="src/images/logo-bookmark.svg" alt="bookmark-logo">
+      <ul class="nav-items-desktop">
+        <li><a href="#home">FEATURES</a></li>
+        <li><a href="#news">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><button class="btn-desktop">LOGIN</button></li>
+      </ul>        
+  </nav>
 
   </section> 
 
@@ -233,26 +244,6 @@
 
     </div>
   </footer> 
-
-
-
-  <!-- Features
-  Pricing
-  Contact
-  Login
-
-  
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact -->
 
 <script src="./src/js/navbar.js" defer></script>
 <script src="./src/js/email.js" defer></script>
