@@ -92,6 +92,9 @@ body::before {
 
 #logo-under-navbar {
     margin-top: 5rem;
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
 }
 
 .under-navbar-container {
@@ -631,8 +634,8 @@ form p {
   .overlay-content span {
     position: relative;
     bottom: 1rem;
-    padding-right: 7rem;
-    padding-left: 7rem;
+    padding-right: 25%;
+    padding-left: 25%;
     padding-top: .5rem;
     padding-bottom: .5rem;
     border: 2px solid;
@@ -660,6 +663,13 @@ form p {
     align-self: center;
    
 }
+
+.icon-items-2 {
+    margin-top: 9rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+} 
    
 
 /* === MEDIA QUERIES === */
@@ -669,5 +679,92 @@ form p {
         display: flex;
         flex-direction: row;
         margin-bottom: .7rem;
+    }
+}
+
+/* === DESKTOP VERSION / MEDIA QUERY === */
+
+@media (min-width: 1440px) {
+
+    #logo-under-navbar {
+        margin-top: 5rem;
+        /* display: flex; */
+        display: flex;
+        flex-direction: row-reverse;
+    
+    }
+    
+    .under-navbar-container {
+        
+       position: relative;
+       top: 3rem;
+    
+    } 
+    
+    .logo-under-navbar-bg {
+        background-color: hsl(231, 69%, 60%);
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        border-radius: 50% 0 0 50%;
+    }
+    
+    #logo-under-navbar img {
+        width: 315%;
+        height: auto;
+        position: relative;
+        left: .6rem;
+        bottom: 5rem;
+    }
+
+    /* bookmark manager */
+
+    #bookmark-manager {
+        margin-top: 2rem;
+    }
+    
+    .book-manager-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 8rem;
+        margin-right: 3rem;
+    }
+    
+    .flex-container > h1 {
+        text-align: unset;
+        color: hsl(229, 31%, 21%);
+        font-size: 2rem;
+    }
+    
+    .flex-container > p {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 150px;
+        color: hsl(229, 8%, 60%);
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+    
+    .btn-items > button {
+        flex-direction: row;
+    }
+    
+    .btn_1 {
+        color: #FFF;
+        background-color: hsl(231, 69%, 60%);
+        box-shadow:  0 0 .5em hsl(231, 69%, 60%);
+        margin-right: .8rem;
+        margin-left: .1rem;
+        font-weight: bold;
+        position: relative;
+        left: .1rem;
+    }
+    
+    .btn_2 {
+        color: hsl(229, 8%, 60%);
+        background-color: hsl(225, 5%, 96%);
+        box-shadow:  0 0 .5em hsl(229, 8%, 60%);
+        margin-left: .3rem;
+        font-weight: bold;
     }
 }

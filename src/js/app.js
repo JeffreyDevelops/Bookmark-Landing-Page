@@ -26,6 +26,10 @@ hamburger_section.innerHTML = ` <div class="flex-container navbar">
 </div>
 <hr class="mobile-nav-line">
 <span>LOGIN</span>
+<div class="icon-items-2">
+  <img src="./src/images/icon-facebook.svg" alt="">
+  <img src="./src/images/icon-twitter.svg" alt="">
+</div>
 </div>`;
 body.insertAdjacentElement("beforeend", hamburger_section);
 
@@ -54,7 +58,6 @@ navbar_section.insertAdjacentElement("afterend", big_logo_section);
 
 
 // BOOKMARK SECTION
-
 let bookmark_section = document.createElement("section");
 bookmark_section.setAttribute("id", "bookmark-manager");
 bookmark_section.innerHTML = `<div class="flex-container book-manager-container">
