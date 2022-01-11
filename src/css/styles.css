@@ -687,11 +687,10 @@ form p {
 @media (min-width: 1440px) {
 
     #logo-under-navbar {
-        margin-top: 5rem;
+        margin-top: 8rem;
         /* display: flex; */
         display: flex;
         flex-direction: row-reverse;
-    
     }
     
     .under-navbar-container {
@@ -710,10 +709,10 @@ form p {
     }
     
     #logo-under-navbar img {
-        width: 315%;
+        width: 300%;
         height: auto;
         position: relative;
-        left: .6rem;
+        right: 7rem!important;
         bottom: 5rem;
     }
 
@@ -728,6 +727,8 @@ form p {
         justify-content: center;
         margin-bottom: 8rem;
         margin-right: 3rem;
+        position: relative;
+        right: 5rem;
     }
     
     .flex-container > h1 {
