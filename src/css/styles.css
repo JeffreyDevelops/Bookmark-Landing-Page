@@ -196,7 +196,7 @@ body::before {
     border: none;
     height: 1px;
     background-color: hsl(229, 8%, 60%);
-    width: 300px;
+    width: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -215,7 +215,7 @@ body::before {
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
-    top: 1.7rem;
+    top: 1.1rem;
 }
 
 .active-feature_2 {
@@ -226,7 +226,7 @@ body::before {
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
-    top: 1rem;
+    top: 1.1rem;
 }
 
 .active-feature_3 {
@@ -237,7 +237,7 @@ body::before {
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
-    top: 1rem;
+    top: 1.1rem;
 }
 
 /* === TAB-TEXT === */
@@ -280,7 +280,7 @@ body::before {
 
 /* === DOWNLOAD-EXTENSION === */
 
-.flex-exention-container {
+.flex-extension-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -694,6 +694,11 @@ form p {
         visibility: hidden;
      }
      
+    #features-area-desktop {
+        visibility: hidden;
+        display: none;
+    }
+     
 }
 
 /* === DESKTOP VERSION / MEDIA QUERY === */
@@ -751,7 +756,7 @@ form p {
         font-size: 2rem;
     }
     
-    .flex-container > p {
+    .flex-container .bookmark-text {
         text-align: left;
         padding-right: 0;
         padding-left: 150px;
@@ -836,4 +841,107 @@ form p {
     .btn-desktop button {
         font-size: 14px;
     }
+
+    /* Features */
+    #features-area-mobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .feature-selector-desktop {
+        margin-top: 3rem;
+        position: relative;
+        right: 3rem;
+    }
+
+    .features-line-desktop {
+        border: none;
+        height: 1px;
+        background-color: hsl(229, 8%, 60%);
+        width: 120%;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .header_1_desktop {
+        position: relative;
+        left: 2rem;
+    }
+
+    .header_2_desktop {
+        margin-left: 3rem;
+        position: relative;
+        left: 1rem;
+    }
+
+    .header_3_desktop {
+        margin-left: 3rem;
+        position: relative;
+        left: 1rem;
+    }
+
+    .active-feature_1_desktop {
+        border: none;
+        height: 4px;
+        background-color: hsl(0, 94%, 66%);
+        width: 230px;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        right: 8.8rem;
+        top: 1.5rem;
+    }
+
+    /* Extension */
+
+    .flex-extension-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+
+    .extension-bg-1 {
+        display: flex;
+        background-color: #FFF;
+        box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+        width: 75%;
+        max-width: 20%;
+        height: 19rem;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .extension-bg-2 {
+        display: flex;
+        background-color: #FFF;
+        box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+        width: 75%;
+        max-width: 20%;
+        height: 19rem;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .extension-bg-3{
+        display: flex;
+        background-color: #FFF;
+        box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+        width: 75%;
+        max-width: 20%;
+        height: 19rem;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 2rem;
+    }
+
 }
