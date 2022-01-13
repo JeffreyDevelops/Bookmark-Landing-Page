@@ -367,7 +367,7 @@ body::before {
     margin-right: 1rem;
   }
 
-#faq {
+.faq {
     display: flex;
     flex-direction: column;
 }
@@ -944,4 +944,12 @@ form p {
         top: 2rem;
     }
 
+    /* FAQ */
+
+    .faq_header_1 {
+        display: inline-block;
+        width: 500px;
+    }
+
+  
 }
