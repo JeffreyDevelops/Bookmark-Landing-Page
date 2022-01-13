@@ -511,6 +511,10 @@ body::before {
     
 } 
 
+.email-form-input {
+    flex-direction: column;
+}
+
 form p {
     margin-top: 0;
     margin-bottom: 0;
@@ -949,6 +953,26 @@ form p {
     .faq_header_1 {
         display: inline-block;
         width: 500px;
+    }
+
+    /* Email */
+
+    .email-form-input {
+        flex-direction: row;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .email-button {
+        margin-top: 0;
+        padding: .9rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: .2rem;
+        color: #FFF;
+        font-weight: bold;
+        background-color: hsl(0, 94%, 66%);
+        border: none;
     }
 
   
