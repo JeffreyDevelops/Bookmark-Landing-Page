@@ -492,10 +492,11 @@ body::before {
     letter-spacing: .2rem;
 }
 
-.email-container h1 {
+.email-container .email-header{
     margin-top: .6rem;
     color: #FFF;
     font-size: 25px;
+    text-align: center;
     font-weight: 400;
 }
 
@@ -956,6 +957,14 @@ form p {
     }
 
     /* Email */
+
+    .email-container .email-header{
+        margin-top: .6rem;
+        color: #FFF;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 400;
+    }
 
     .email-form-input {
         flex-direction: row;
