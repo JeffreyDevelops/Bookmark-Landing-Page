@@ -183,16 +183,8 @@ body::before {
     color: hsl(229, 8%, 60%);
 }
 
-.features-line_margin {
-    border: none;
-    height: 1px;
-    background-color: hsl(229, 8%, 60%);
-    width: 300px;
-    margin-top: 30px;
-    margin-bottom: 0;
-}
 
-.features-line {
+.features-line_1 {
     border: none;
     height: 1px;
     background-color: hsl(229, 8%, 60%);
@@ -201,9 +193,31 @@ body::before {
     margin-bottom: 1rem;
 }
 
-.active-feature-container-1 {
-    position: relative;
-    bottom: 1rem;
+.features-line_2 {
+    border: none;
+    height: 1px;
+    background-color: hsl(229, 8%, 60%);
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.features-line_3 {
+    border: none;
+    height: 1px;
+    background-color: hsl(229, 8%, 60%);
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.features-line_4 {
+    border: none;
+    height: 1px;
+    background-color: hsl(229, 8%, 60%);
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -688,7 +702,8 @@ form p {
     
 }
 
-@media (max-width: 1438px) {
+
+@media (max-width: 1438px) {    
     .navbar-desktop {
         position: relative;
         margin-left: 2rem;
@@ -997,7 +1012,7 @@ form p {
     .grid-footer {
         margin-top: 2rem;
         display: grid;
-        grid-template-rows: 30px;
+        grid-template-rows: 16%;
         grid-template-columns: 180px 100px 100px 100px 200px 200px 200px 200px;
     }
     
@@ -1023,4 +1038,55 @@ form p {
         width: 1.3rem;
         height: 1.3rem;
     }
+ /* features js desktop */
+    
+.active-feature_1 {
+    border: none;
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 1.1rem;
+}
+
+.active-feature_2 {
+    border: none;
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 1.1rem;
+}
+
+.active-feature_3 {
+    border: none;
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 1.1rem;
+}
+}
+
+@media (min-width: 1920px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: 78%;
+        grid-template-columns:30% 30% 40% 400px;
+    }
+
+    
+.logo-under-navbar-bg {
+    background-color: hsl(231, 69%, 60%);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 50% 0 0 50%;
+}
 }
