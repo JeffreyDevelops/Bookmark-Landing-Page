@@ -16,8 +16,9 @@ text_1_desktop.innerHTML = `<div id="tab-container">
 
 <div class="flex-container tab-text-container">
 <h1>Bookmark in one click</h1>
-<p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.</p>
+<p>Organize your bookmarks however you like. Our<br> simple drag-and-drop interface 
+  gives you complete<br> control over how you manage your favourite sites.</p>
+  <button id="more_info">More Info</button>
 </div>
 </div>`
 

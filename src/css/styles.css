@@ -1049,6 +1049,41 @@ form p {
         
     }
 
+    .tab-text-container {
+    position: relative;
+    align-items: flex-start;
+    left: 8rem;
+    bottom: 3rem;
+    }
+
+    #tab-container {
+        margin-top: 7rem;
+    }
+
+    #tab-container img {
+        width: 105%;
+        max-width: 477px;
+        height: auto;
+        position: relative;
+        bottom: 2rem;
+        left: 7.800000000000001rem;
+        bottom: 6rem;
+    }
+
+    .tab-text-container p {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .tab-bg {
+    background-color: hsl(231, 69%, 60%);
+    width: 556px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 0 50% 50% 0;
+    }
     /* Extension */
 
     .flex-extension-container {
