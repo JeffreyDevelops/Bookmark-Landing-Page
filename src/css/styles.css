@@ -693,6 +693,20 @@ form p {
 
 /* === MEDIA QUERIES === */
 
+@media (max-width: 320px) {
+    /* === TAB-TEXT === */
+
+     .tab-bg {
+        background-color: hsl(231, 69%, 60%)!important;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 0 50% 50% 0;
+    }
+
+}
+
+
 @media (max-width: 328px) {
     .btn-items > button {
         display: flex;
@@ -703,23 +717,100 @@ form p {
 }
 
 
-@media (max-width: 1438px) {    
-    .navbar-desktop {
-        position: relative;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        top: 2rem;
-        justify-content: space-between;
-        display: none;
-        visibility: hidden;
-     }
-     
+@media (max-width: 375px) {
+    /* === TAB-TEXT === */
+
+    .tab-bg {
+        background-color: hsl(231, 69%, 60%)!important;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 0 50% 50% 0;
+    }
+}
+
+@media (max-width: 425px) {
+    /* === TAB-TEXT === */
+
+    .tab-bg {
+        background-color: hsl(231, 69%, 60%)!important;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 0 50% 50% 0;
+    }
+}
+
+@media (max-width: 1439px) {
+
+        /* Navbar */
+   .navbar-desktop {
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    top: 2rem;
+    justify-content: space-between;
+    display: none;
+    visibility: hidden;
+ }
+
+    /* Features */
+    
     #features-area-desktop {
         visibility: hidden;
         display: none;
     }
-     
-}
+        /* === TAB-TEXT === */
+
+        .tab-grid-container {
+            margin-bottom: 4rem;
+            position: relative;
+            top: 3rem;
+            display: grid;
+            grid-template-rows: 90%;
+            grid-template-columns:50% 30% 30%;
+            max-width: 600px;
+         } 
+        
+        #tab-text {
+            position: relative;
+            bottom: 2rem;
+        }
+        
+        #tab-container {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+        .tab-bg {
+            background-color: #FFF;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-radius: 0 50% 50% 0;
+        }
+        
+        #tab-container img {
+            width: 105%;
+            height: auto;
+            position: relative;
+            bottom: 2rem;
+            left: 1.8rem;
+            bottom: 3rem;
+        }
+        
+        .tab-text-container {
+             flex-direction: column;
+        }
+        
+        .tab-text-container h1 {
+            margin-top: 0;
+            margin-bottom: .9rem;
+        }
+        
+        }
 
 /* === DESKTOP VERSION / MEDIA QUERY === */
 
@@ -730,13 +821,14 @@ form p {
         /* display: flex; */
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
     }
     
     .under-navbar-container {
         
        position: relative;
        top: 3rem;
-    
+       left: 2.78rem;
     } 
     
     .logo-under-navbar-bg {
@@ -767,7 +859,7 @@ form p {
         margin-bottom: 8rem;
         margin-right: 3rem;
         position: relative;
-        right: 5rem;
+        right: 2rem;
     }
     
     .flex-container > h1 {
@@ -909,6 +1001,30 @@ form p {
         margin-bottom: 0;
         position: relative;
         right: 8.8rem;
+        top: 1.5rem;
+    }
+
+    .active-feature_2_desktop {
+        border: none;
+        height: 4px;
+        background-color: hsl(0, 94%, 66%);
+        width: 230px;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        left: 3rem;
+        top: 1.5rem;
+    }
+
+    .active-feature_3_desktop {
+        border: none;
+        height: 4px;
+        background-color: hsl(0, 94%, 66%);
+        width: 230px;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        left: 15rem;
         top: 1.5rem;
     }
 
@@ -1081,7 +1197,16 @@ form p {
         grid-template-columns:30% 30% 40% 400px;
     }
 
+    .book-manager-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 8rem;
+        margin-right: 3rem;
+        position: relative;
+        right: 0;
+    }
     
+
 .logo-under-navbar-bg {
     background-color: hsl(231, 69%, 60%);
     grid-row-start: 1;
@@ -1089,4 +1214,12 @@ form p {
     grid-column-end: 4;
     border-radius: 50% 0 0 50%;
 }
+
+.under-navbar-container {
+        
+    position: relative;
+    top: 3rem;
+    left: 4.5rem!important;
+ } 
+
 }
