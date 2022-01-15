@@ -22,6 +22,44 @@ text_1_desktop.innerHTML = `<div id="tab-container">
 </div>
 </div>`
 
+
+let text_2_desktop = document.createElement("section");
+text_2_desktop.setAttribute("id", "tab-text_desktop");
+text_2_desktop.innerHTML = `<div id="tab-container">
+<div class="flex-container">
+<div class="tab-grid-container">
+  <div class="tab-bg">
+  <div><img src="./src/images/illustration-features-tab-2.svg" alt=""></div>
+</div>
+</div>
+</div>
+
+<div class="flex-container tab-text-container">
+<h1>Intelligent search</h1>
+  <p>Our powerful search feature will help you find saved sites in no time at all.<br>
+    No need to trawl through all of your bookmarks.</p>
+</div>
+</div>`
+
+
+let text_3_desktop = document.createElement("section");
+text_3_desktop.setAttribute("id", "tab-text_desktop");
+text_3_desktop.innerHTML = `<div id="tab-container">
+<div class="flex-container">
+<div class="tab-grid-container">
+  <div class="tab-bg">
+  <div><img src="./src/images/illustration-features-tab-3.svg" alt=""></div>
+</div>
+</div>
+</div>
+
+<div class="flex-container tab-text-container">
+<h1>Share your bookmarks</h1>
+  <p>Easily share your bookmarks and collections with others. <br>Create a shareable 
+    link that you can send at the click of a button.</p>
+</div>
+</div>`
+
 // TAB-TEXT
 let text_1 = document.createElement("section");
 text_1.setAttribute("id", "tab-text");
@@ -34,9 +72,9 @@ text_1.innerHTML = `<div id="tab-container">
 </div>
 
 <div class="flex-container tab-text-container">
-  <h1>Bookmark in one click</h1>
-  <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-    gives you complete control over how you manage your favourite sites.</p>
+<h1>Share your bookmarks</h1>
+<p>Easily share your bookmarks and collections with others. Create a shareable 
+  link that you can send at the click of a button.</p>
 </div>`;
 
 
@@ -174,8 +212,8 @@ features.addEventListener("click", e => {
       active_features_3_desktop.remove();
       header_3_desktop.insertAdjacentElement("afterend", active_features_1_desktop);
   
-      text_2.replaceWith(text_1_desktop);
-      text_3.replaceWith(text_1_desktop);
+      text_2_desktop.replaceWith(text_1_desktop);
+      text_3_desktop.replaceWith(text_1_desktop);
   } 
 
    
@@ -184,8 +222,8 @@ features.addEventListener("click", e => {
    if (e.target === header_2_desktop) {
       header_3_desktop.insertAdjacentElement("afterend", active_features_2_desktop);
   if (text_1_desktop.hasAttribute!== "#tab-text") {
-     text_1_desktop.replaceWith(text_3);
-     text_2.replaceWith(text_3);
+     text_1_desktop.replaceWith(text_3_desktop);
+     text_2_desktop.replaceWith(text_3_desktop);
   } else {
       console.log("ups");
   }
@@ -208,9 +246,9 @@ header_3_desktop.addEventListener("click", e => {
      
      }
 
-     if (text_1.hasAttribute!== "#tab-text") {
-     text_1.replaceWith(text_2);
-     text_3.replaceWith(text_2);
+     if (text_1_desktop.hasAttribute!== "#tab-text") {
+     text_1_desktop.replaceWith(text_2_desktop);
+     text_3_desktop.replaceWith(text_2_desktop);
    } else {
        console.log("ups");
    }
