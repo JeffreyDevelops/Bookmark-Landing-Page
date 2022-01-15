@@ -263,6 +263,7 @@ body::before {
 
 #tab-container {
     margin-top: 5rem;
+    display: flex;
 }
 
 
@@ -776,6 +777,13 @@ form p {
             position: relative;
             bottom: 2rem;
         }
+
+        #tab-text_desktop {
+            position: relative;
+            bottom: 2rem;
+            display: none;
+            
+        }
         
         #tab-container {
             margin-top: 5rem;
@@ -1028,6 +1036,19 @@ form p {
         top: 1.5rem;
     }
 
+    #tab-text {
+        position: relative;
+        bottom: 2rem;
+        display: none;
+        
+    }
+
+    #tab-text_desktop {
+        position: relative;
+        bottom: 2rem;
+        
+    }
+
     /* Extension */
 
     .flex-extension-container {
@@ -1131,7 +1152,6 @@ form p {
         grid-template-rows: 16%;
         grid-template-columns: 180px 100px 100px 100px 200px 200px 200px 200px;
     }
-    
     
     .grid-footer span {
         text-align: center;
