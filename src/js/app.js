@@ -27,4 +27,4 @@ hamburger_section.innerHTML = `<div class="flex-container navbar-mobile">
 <img src="./src/images/icon-twitter.svg" alt="">
 </div>
 </div> `;
-body.insertAdjacentElement("beforeend", hamburger_section);
+body.insertAdjacentElement("beforebegin", hamburger_section);
