@@ -411,6 +411,10 @@ body::before {
     align-self: flex-end;
 }
 
+.arrow-img {
+    cursor: pointer;
+}
+
 .faq-container > h1 {
     text-align: center;
     color: hsl(229, 31%, 21%);
@@ -571,6 +575,7 @@ form p {
     font-weight: bold;
     background-color: hsl(0, 94%, 66%);
     border: none;
+    cursor: pointer;
 }
 
 
@@ -742,6 +747,43 @@ form p {
     }
 }
 
+@media (min-width: 770px) {
+    #logo-under-navbar {
+        margin-top: 8rem;
+        /* display: flex; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .under-navbar-container {
+        
+       position: relative;
+       top: 3rem;
+       left: 2.78rem;
+    } 
+    
+    .logo-under-navbar-bg {
+        background-color: #FFF;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        border-radius: 50% 0 0 50%;
+    }
+    
+    #logo-under-navbar img {
+        width: 300%;
+        max-width: 700px;
+        height: auto;
+        position: relative;
+        right: 7rem!important;
+        bottom: 5rem;
+    }
+
+
+}
+
 @media (max-width: 1439px) {
 
         /* Navbar */
@@ -761,6 +803,8 @@ form p {
         visibility: hidden;
         display: none;
     }
+
+
         /* === TAB-TEXT === */
 
         .tab-grid-container {
@@ -972,6 +1016,7 @@ form p {
         margin-top: 3rem;
         position: relative;
         right: 3rem;
+        cursor: pointer;
     }
 
     .features-line-desktop {
@@ -1245,6 +1290,16 @@ form p {
 }
 }
 
+@media (min-width: 1441px) {
+    .logo-under-navbar-bg {
+        background-color: #FFF;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        border-radius: 50% 0 0 50%;
+    }
+}
+
 @media (min-width: 1920px) {
     .grid-container {
         display: grid;
@@ -1262,13 +1317,6 @@ form p {
     }
     
 
-.logo-under-navbar-bg {
-    background-color: hsl(231, 69%, 60%);
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    border-radius: 50% 0 0 50%;
-}
 
 .under-navbar-container {
         
@@ -1278,3 +1326,4 @@ form p {
  } 
 
 }
+
