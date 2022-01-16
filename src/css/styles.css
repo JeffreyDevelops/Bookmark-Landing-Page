@@ -1047,6 +1047,10 @@ form p {
         font-size: 14px;
     }
 
+    .nav-items-desktop a:hover{
+        color: hsl(0, 94%, 66%);
+    }
+
     .btn-desktop {
     padding: .5rem;
     padding-left: 1.3rem;
