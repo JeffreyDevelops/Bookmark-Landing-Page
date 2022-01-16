@@ -179,9 +179,19 @@ body::before {
     text-align: center;
 }
 
-.features-container span {
+.header_1_desktop {
+    color: hsl(229, 31%, 21%);
+}
+.header_2_desktop {
     color: hsl(229, 8%, 60%);
 }
+
+.header_3_desktop {
+    color: hsl(229, 8%, 60%);
+}
+
+
+
 
 
 .features-line_1 {

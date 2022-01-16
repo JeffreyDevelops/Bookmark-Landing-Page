@@ -208,6 +208,9 @@ active_features_3_desktop.setAttribute("class", "active-feature_3_desktop");
 features.addEventListener("click", e => {
   console.log(e);
   if (e.target === header_1_desktop) {
+    header_1_desktop.style.color = "hsl(229, 31%, 21%)";
+    header_2_desktop.style.color = "hsl(229, 8%, 60%)";
+    header_3_desktop.style.color = "hsl(229, 8%, 60%)";
       active_features_2_desktop.remove();
       active_features_3_desktop.remove();
       header_3_desktop.insertAdjacentElement("afterend", active_features_1_desktop);
@@ -220,6 +223,9 @@ features.addEventListener("click", e => {
 
 
    if (e.target === header_2_desktop) {
+    header_1_desktop.style.color = "hsl(229, 8%, 60%)";
+    header_2_desktop.style.color = "hsl(229, 31%, 21%)";
+    header_3_desktop.style.color = "hsl(229, 8%, 60%)";
       header_3_desktop.insertAdjacentElement("afterend", active_features_2_desktop);
   if (text_1_desktop.hasAttribute!== "#tab-text") {
      text_1_desktop.replaceWith(text_3_desktop);
@@ -254,6 +260,9 @@ header_3_desktop.addEventListener("click", e => {
    }
  };
  create();
+ header_1_desktop.style.color = "hsl(229, 8%, 60%)";
+ header_2_desktop.style.color = "hsl(229, 8%, 60%)";
+ header_3_desktop.style.color = "hsl(229, 31%, 21%)";
  active_features_1_desktop.remove();
  active_features_2_desktop.remove();
 }); 
