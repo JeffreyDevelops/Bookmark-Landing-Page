@@ -699,6 +699,49 @@ form p {
 
 /* === MEDIA QUERIES === */
 
+@media (min-width: 320px) {
+    .extension-bg-1 {
+        display: flex;
+        background-color: #FFF;
+        box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+        width: 75%;
+        max-width: 350px;
+        height: 19rem;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        bottom: 0;
+    }
+
+    .extension-bg-2 {
+        display: flex;
+        background-color: #FFF;
+        box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+        width: 75%;
+        max-width: 350px;
+        height: 19rem;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .extension-bg-3{
+        display: flex;
+        background-color: #FFF;
+        box-shadow:  0 0 .5em hsl(172, 8%, 85%);
+        width: 75%;
+        max-width: 350px;
+        height: 19rem;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+    }
+    
+}
+
 @media (max-width: 320px) {
     /* === TAB-TEXT === */
 
@@ -709,6 +752,8 @@ form p {
         grid-column-end: 3;
         border-radius: 0 50% 50% 0;
     }
+
+    
 
 }
 
@@ -735,6 +780,7 @@ form p {
     }
 }
 
+
 @media (max-width: 425px) {
     /* === TAB-TEXT === */
 
@@ -745,6 +791,8 @@ form p {
         grid-column-end: 3;
         border-radius: 0 50% 50% 0;
     }
+
+    
 }
 
 @media (min-width: 770px) {
