@@ -14,28 +14,28 @@ let faq_inside_items_4 = document.querySelector(".faq-inside-items_4");
 // create element 1
 let arrow_text_1 = document.createElement("p");
 arrow_text_1.setAttribute("class", "arrow-text-1");
-arrow_text_1.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.`;
+arrow_text_1.innerHTML = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Fusce tincidunt 
+justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.<p>`;
 
 // create element 2
 let arrow_text_2 = document.createElement("p");
 arrow_text_2.setAttribute("class", "arrow-text-2");
-arrow_text_2.textContent = `Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.`;
+arrow_text_2.innerHTML = `<p>Vivamus luctus eros aliquet convallis ultricies.<br> Mauris augue massa, ultricies non ligula. 
+Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. <br>Mauris augue massa, 
+ultricies non ligula. Suspendisse imperdie tVivamus <br>luctus eros aliquet convallis ultricies. 
+Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>`;
 
 // create element 3
 let arrow_text_3 = document.createElement("p");
 arrow_text_3.setAttribute("class", "arrow-text-3");
-arrow_text_3.textContent = `Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-sollicitudin ex et ultricies bibendum.`;
+arrow_text_3.innerHTML = `<p>Sed consectetur quam id neque fermentum accumsan. <br>Praesent luctus vestibulum dolor, ut condimentum 
+urna vulputate eget.<br> Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+sollicitudin ex et ultricies bibendum.<p>`;
 
 // create element 4
 let arrow_text_4 = document.createElement("p");
 arrow_text_4.setAttribute("class", "arrow-text-4");
-arrow_text_4.textContent = `Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+arrow_text_4.innerHTML = `Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. <br>Aliquam 
 vitae neque eget nisl gravida pellentesque non ut velit.`;
 
 
